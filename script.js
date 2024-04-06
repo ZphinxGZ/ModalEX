@@ -1,20 +1,22 @@
+//เปิด modal
 function openmodal() {
   $("#modal").css("display", "flex");
-  $(".modal-bg").css("display", "flex");
-
   setTimeout(() => {
     $("#modal").css({
       opacity: "1",
       transform: "translateY(0)",
     });
-  }, 300);
+  }, 100);
   setTimeout(() => {
     $(".modal-bg").css({
+      display: "flex",
       opacity: "1",
       transform: "translateX(0)",
     });
-  }, 10);
+  }, 100);
 }
+
+//ปิด modal
 function closemodal() {
   $(".modal-bg").css({
     display: "none",
